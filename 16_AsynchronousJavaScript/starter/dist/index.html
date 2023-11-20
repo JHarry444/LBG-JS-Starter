@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QuickLab 16 - Asynchronous JavaScript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="container">
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a href="#" class="navbar-brand">
+                <img id="siteLogo" src="logo.svg" alt="React Rangers Logo">
+                <h1 id="siteHeading">React Rangers FC</h1>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                </ul>
+            </div>
+    </header>
+    <article id="results" class="jumbotron">
+        <h1>React Rangers Results</h1>
+        <div id="resultsPlaceholder">Results will appear here shortly...</div>
+    </article>
+    <article id="addResult">
+        <h1>Add a result:</h1>
+        <form id="result">
+            <div class="form-group">
+                <label for="home">Home Team: </label>
+                <input name="home" type="text" class="form-control" placeholder="Home Team" required>
+            </div>
+            <div class="form-group">
+                <label for="homeScore">Home Score: </label>
+                <input name="homeScore" type="number" class="form-control" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="away">Away Team: </label>
+                <input name="away" type="text" class="form-control" placeholder="Away Team" required>
+            </div>
+            <div class="form-group">
+                <label for="awayScore">Away Score: </label>
+                <input name="awayScore" type="number" class="form-control" min="0" required>
+            </div>
+            <input type="submit" value="Add Result" class="btn btn-primary">
+        </form>
+    </article>
+    <script src="./main.js"></script>
+</body>
+
+</html>

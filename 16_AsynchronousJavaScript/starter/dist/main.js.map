@@ -1,0 +1,1 @@
+{"version":3,"file":"main.js","mappings":";;;;;AAAAA,OAAO,CAACC,GAAR,CAAY,8BAAZ,E","sources":["webpack://jatest/./src/index.js"],"sourcesContent":["console.log('If you can see me, it worked')\r\n\r\n"],"names":["console","log"],"sourceRoot":""}
